@@ -1,0 +1,24 @@
+<div class="container">
+	<h1>Uploader Component</h1>
+	<h2 class="lead">File Upload using AngularJS, JQuery and Wistia.</h2>
+	
+	<!-- The fileinput-button span is used to style the file input field as button -->
+	<span class="btn btn-success fileinput-button">
+		<i class="glyphicon glyphicon-plus"></i>
+		<span>Select files...</span>
+		<!-- The file input field used as target for the file upload widget -->
+		<input id="fileupload" type="file" name="files[]" enctype="multipart/form-data" accept="video/*"/>
+	</span>
+	<br>
+	<br>
+	<!-- The global progress bar -->
+	<div id="progress" class="progress">
+		<div class="progress-bar progress-bar-success"></div>
+	</div>
+
+	<!-- The player for the videos -->
+	<div class="wistia_embed" style="width:100%;height:360px;">&nbsp;</div>
+
+	
+	<input id="nextVideoId" type="hidden" value="_"/>
+</div>
